@@ -1,0 +1,124 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-07T14:39:02.860Z",
+        "line": 20,
+        "name": "sending money negative",
+        "description": "",
+        "id": "navigate-to-pay-bill-page;sending-money-negative",
+        "after": [
+          {
+            "result": {
+              "duration": 767506900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8232177400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user is\ton the page",
+            "match": {
+              "location": "com.zerobank.step_definitions.AccountActivityNavigationDef.the_user_is_on_the_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 917275100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user is on \"Online Banking\" page on Dashboard",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online Banking\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.zerobank.step_definitions.DynamicAccountActivityDef.the_user_is_on_page_on_Dashboard(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 810139100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user is on \"Pay Bills\" page on Online Banking page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pay Bills\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.zerobank.step_definitions.DynamicAccountActivityDef.the_user_is_on_page_on_Online_Banking_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 126125100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "input the money on amount button",
+            "match": {
+              "location": "com.zerobank.step_definitions.PayBillsDef.input_the_money_on_amount_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1167625500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "click the pay button",
+            "match": {
+              "location": "com.zerobank.step_definitions.PayBillsDef.click_the_pay_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 55965300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "verify lutfen bu alani doldurun message is displayed",
+            "match": {
+              "location": "com.zerobank.step_definitions.PayBillsDef.verify_lutfen_bu_alani_doldurun_message_is_displayed()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "navigate to Pay Bill page",
+    "description": "",
+    "id": "navigate-to-pay-bill-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/PayBillsNavigation.feature",
+    "tags": []
+  }
+]
