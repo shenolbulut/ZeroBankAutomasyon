@@ -16,7 +16,6 @@ Feature: navigate to Pay Bill page
     Then input the date on the date button
     Then click the pay button
     And verify The payment was successfully submitted message is displayed
-  @wip
   Scenario: sending money negative
     Given the user is	on the page
     When the user is on "Online Banking" page on Dashboard

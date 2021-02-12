@@ -14,5 +14,7 @@ public class AccountActivityPage extends BasePage{
     public WebElement dropdown;
     @FindBy(xpath = "//table//th")
     public List<WebElement> transactionTable;
+    @FindBy(xpath = "//*[@href='#ui-tabs-2']")
+    public WebElement findTransaction;
 
 }

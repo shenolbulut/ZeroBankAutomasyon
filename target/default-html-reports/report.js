@@ -1,11 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/PayBillsNavigation.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/FindTransaction.feature");
 formatter.feature({
-  "name": "navigate to Pay Bill page",
+  "name": "Find transaction on Activity",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
 });
 formatter.scenario({
-  "name": "sending money negative",
+  "name": "Search data range",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -15,66 +20,208 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user is\ton the page",
+  "name": "the user acces to Find Transaction tab",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "com.zerobank.step_definitions.AccountActivityNavigationDef.the_user_is_on_the_page()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user is on \"Online Banking\" page on Dashboard",
+  "name": "the user enters date range from “2012-09-01” to “2012-09-06”",
   "keyword": "When "
 });
-formatter.match({
-  "location": "com.zerobank.step_definitions.DynamicAccountActivityDef.the_user_is_on_page_on_Dashboard(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user is on \"Pay Bills\" page on Online Banking page",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.zerobank.step_definitions.DynamicAccountActivityDef.the_user_is_on_page_on_Online_Banking_page(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "input the money on amount button",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.zerobank.step_definitions.PayBillsDef.input_the_money_on_amount_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click the pay button",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.zerobank.step_definitions.PayBillsDef.click_the_pay_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify lutfen bu alani doldurun message is displayed",
+  "name": "clicks search",
   "keyword": "And "
 });
-formatter.match({
-  "location": "com.zerobank.step_definitions.PayBillsDef.verify_lutfen_bu_alani_doldurun_message_is_displayed()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should only show transactions dates between “2012-09-01” to “2012-09-06”",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the results should be\tsorted by most recent date",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the user enters date\trange from “2012-09-02” to “2012-09-06”",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "clicks search",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should\tonly show transactions dates between “2012-09-02” to “2012-09-06”",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the results table\tshould only\tnot contain transactions dated “2012-09-01”",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.after({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "Search description",
+  "description": "      Given\tthe\tuser accesses the Find Transactions\ttab",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user enters description “ONLINE”",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "clicks search",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should\tonly show descriptions containing “ONLINE”",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the user\tenters description “OFFICE”",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "clicks search",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should\tonly show descriptions containing “OFFICE”",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table\tshould not show\tdescriptions containing\t“OFFICE”",
+  "keyword": "But "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.after({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "Search description case insensitive",
+  "description": "      Given\tthe\tuser accesses the Find Transactions\ttab",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user\tenters description “ONLINE”",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "clicks search",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should\tonly show descriptions containing “ONLINE”",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the user\tenters description “online”",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "clicks search",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should\tonly show descriptions containing “ONLINE”",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.after({
+  "status": "skipped"
 });
 });

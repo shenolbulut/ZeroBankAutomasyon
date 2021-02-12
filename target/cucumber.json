@@ -1,18 +1,17 @@
 [
   {
-    "line": 4,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2021-02-07T14:39:02.860Z",
-        "line": 20,
-        "name": "sending money negative",
+        "start_timestamp": "2021-02-09T18:14:15.733Z",
+        "line": 4,
+        "name": "Search data range",
         "description": "",
-        "id": "navigate-to-pay-bill-page;sending-money-negative",
+        "id": "find-transaction-on-activity;search-data-range",
         "after": [
           {
             "result": {
-              "duration": 767506900,
-              "status": "passed"
+              "status": "skipped"
             },
             "match": {
               "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -24,87 +23,253 @@
         "steps": [
           {
             "result": {
-              "duration": 8232177400,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 21,
-            "name": "the user is\ton the page",
-            "match": {
-              "location": "com.zerobank.step_definitions.AccountActivityNavigationDef.the_user_is_on_the_page()"
-            },
+            "line": 5,
+            "name": "the user acces to Find Transaction tab",
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 917275100,
-              "status": "passed"
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "the user enters date range from “2012-09-01” to “2012-09-06”",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "clicks search",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "results table should only show transactions dates between “2012-09-01” to “2012-09-06”",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "the results should be\tsorted by most recent date",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "the user enters date\trange from “2012-09-02” to “2012-09-06”",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "clicks search",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "results table should\tonly show transactions dates between “2012-09-02” to “2012-09-06”",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "the results table\tshould only\tnot contain transactions dated “2012-09-01”",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-09T18:14:15.920Z",
+        "line": 16,
+        "name": "Search description",
+        "description": "      Given\tthe\tuser accesses the Find Transactions\ttab",
+        "id": "find-transaction-on-activity;search-description",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "the user enters description “ONLINE”",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "clicks search",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "results table should\tonly show descriptions containing “ONLINE”",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "the user\tenters description “OFFICE”",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
             "line": 22,
-            "name": "the user is on \"Online Banking\" page on Dashboard",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Online Banking\"",
-                  "offset": 15
-                }
-              ],
-              "location": "com.zerobank.step_definitions.DynamicAccountActivityDef.the_user_is_on_page_on_Dashboard(java.lang.String)"
-            },
-            "keyword": "When "
+            "name": "clicks search",
+            "match": {},
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 810139100,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 23,
-            "name": "the user is on \"Pay Bills\" page on Online Banking page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Pay Bills\"",
-                  "offset": 15
-                }
-              ],
-              "location": "com.zerobank.step_definitions.DynamicAccountActivityDef.the_user_is_on_page_on_Online_Banking_page(java.lang.String)"
+            "name": "results table should\tonly show descriptions containing “OFFICE”",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
+            "line": 24,
+            "name": "results table\tshould not show\tdescriptions containing\t“OFFICE”",
+            "match": {},
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-09T18:14:15.967Z",
+        "line": 26,
+        "name": "Search description case insensitive",
+        "description": "      Given\tthe\tuser accesses the Find Transactions\ttab",
+        "id": "find-transaction-on-activity;search-description-case-insensitive",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "the user\tenters description “ONLINE”",
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 126125100,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 24,
-            "name": "input the money on amount button",
-            "match": {
-              "location": "com.zerobank.step_definitions.PayBillsDef.input_the_money_on_amount_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1167625500,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "click the pay button",
-            "match": {
-              "location": "com.zerobank.step_definitions.PayBillsDef.click_the_pay_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 55965300,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "verify lutfen bu alani doldurun message is displayed",
-            "match": {
-              "location": "com.zerobank.step_definitions.PayBillsDef.verify_lutfen_bu_alani_doldurun_message_is_displayed()"
-            },
+            "line": 29,
+            "name": "clicks search",
+            "match": {},
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "results table should\tonly show descriptions containing “ONLINE”",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "the user\tenters description “online”",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 32,
+            "name": "clicks search",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 33,
+            "name": "results table should\tonly show descriptions containing “ONLINE”",
+            "match": {},
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -114,11 +279,20 @@
         ]
       }
     ],
-    "name": "navigate to Pay Bill page",
+    "name": "Find transaction on Activity",
     "description": "",
-    "id": "navigate-to-pay-bill-page",
+    "id": "find-transaction-on-activity",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/PayBillsNavigation.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/FindTransaction.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
