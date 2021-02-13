@@ -104,6 +104,7 @@ public class AccountActivityNavigationDef {
         new FirstPage().signBtn.click();
         new LoginPage().login();
         Driver.get().navigate().back();
+
     }
 
 }
