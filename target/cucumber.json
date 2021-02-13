@@ -1,6 +1,6 @@
 [
   {
-    "line": 2,
+    "line": 3,
     "elements": [
       {
         "line": 4,
@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8516380800,
+              "duration": 10772064600,
               "status": "passed"
             },
             "line": 5,
@@ -20,55 +20,19 @@
               "location": "com.zerobank.step_definitions.AccountActivityNavigationDef.the_user_is_on_the_page()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1021179900,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user is on \"Online Banking\" page on Dashboard",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Online Banking\"",
-                  "offset": 15
-                }
-              ],
-              "location": "com.zerobank.step_definitions.DynamicAccountActivityDef.the_user_is_on_page_on_Dashboard(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1007449900,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the user is on \"Account Activity\" page on Online Banking page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Account Activity\"",
-                  "offset": 15
-                }
-              ],
-              "location": "com.zerobank.step_definitions.DynamicAccountActivityDef.the_user_is_on_page_on_Online_Banking_page(java.lang.String)"
-            },
-            "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-12T19:35:25.920Z",
-        "line": 9,
-        "name": "Seacrh date range",
+        "start_timestamp": "2021-02-13T09:47:28.898Z",
+        "line": 29,
+        "name": "Loan\taccount\tredirect",
         "description": "",
-        "id": "find-transactions-in-accoutn-activity;seacrh-date-range",
+        "id": "navigating-to-specific-accounts-in-accounts-activity;loan-account-redirect",
         "after": [
           {
             "result": {
-              "duration": 1258224300,
+              "duration": 1574031100,
               "status": "passed"
             },
             "match": {
@@ -81,162 +45,53 @@
         "steps": [
           {
             "result": {
-              "duration": 1116125200,
+              "duration": 869165800,
               "status": "passed"
             },
-            "line": 10,
-            "name": "the user accesses the Find Transactions tab",
+            "line": 30,
+            "name": "the\tuser\tclicks\ton\tLoan\tlink\ton\tthe\tAccount\tSummary\tpage",
             "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsDef.the_user_accesses_the_Find_Transactions_tab()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 372599200,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the user enters date range from \"2012-09-01\" to \"2012-09-06\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2012-09-01\"",
-                  "offset": 32
-                },
-                {
-                  "val": "\"2012-09-06\"",
-                  "offset": 48
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsDef.the_user_enters_date_range_from_to(java.lang.String,java.lang.String)"
+              "location": "com.zerobank.step_definitions.AccountActivityNavigationDef.the_user_clicks_on_Loan_link_on_the_Account_Summary_page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1264223300,
+              "duration": 14987200,
               "status": "passed"
             },
-            "line": 12,
-            "name": "clicks search",
+            "line": 31,
+            "name": "the\tAccount\tActivity page\tshould\tbe\tdisplayed",
             "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsDef.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 91946200,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "result table should only show transactions dates between \"2012-09-01\" to \"2012-09-06\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2012-09-01\"",
-                  "offset": 57
-                },
-                {
-                  "val": "\"2012-09-06\"",
-                  "offset": 73
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsDef.result_table_should_only_show_transactions_dates_between_to(java.lang.String,java.lang.String)"
+              "location": "com.zerobank.step_definitions.AccountActivityNavigationDef.the_Account_Activity_page_should_be_displayed()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 49964200,
+              "duration": 257839500,
               "status": "passed"
             },
-            "line": 14,
-            "name": "the result should be sorted by most recent date",
+            "line": 32,
+            "name": "Account\tdrop\tdown\tshould\thave\tLoan selected",
             "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsDef.the_result_should_be_sorted_by_most_recent_date()"
+              "location": "com.zerobank.step_definitions.AccountActivityNavigationDef.account_drop_down_should_have_Loan_selected()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 269836100,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "the user enters date range from \"2012-09-02\" to \"2012-09-06\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2012-09-02\"",
-                  "offset": 32
-                },
-                {
-                  "val": "\"2012-09-06\"",
-                  "offset": 48
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsDef.the_user_enters_date_range_from_to(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1069345400,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.step_definitions.FindTransactionsDef.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 53963600,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "result table should only show transactions dates between \"2012-09-02\" to \"2012-09-06\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2012-09-02\"",
-                  "offset": 57
-                },
-                {
-                  "val": "\"2012-09-06\"",
-                  "offset": 73
-                }
-              ],
-              "location": "com.zerobank.step_definitions.FindTransactionsDef.result_table_should_only_show_transactions_dates_between_to(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@wir"
+            "name": "@wip"
           }
         ]
       }
     ],
-    "name": "Find Transactions in Accoutn Activity",
+    "name": "Navigating\tto\tspecific\taccounts\tin\tAccounts\tActivity",
     "description": "",
-    "id": "find-transactions-in-accoutn-activity",
+    "id": "navigating-to-specific-accounts-in-accounts-activity",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/FindTransactions.feature",
-    "tags": [
-      {
-        "name": "@wir",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/AccountActivityNavigation.feature",
+    "tags": []
   }
 ]
