@@ -1,5 +1,5 @@
 Feature: Account Summary page automation
-
+  @wis
 
   Scenario: verifinng account types
     Given the user is	on the page

@@ -17,10 +17,6 @@ public class LoginPage {
     public WebElement passwordInput;
     @FindBy(xpath = "//div/input[@type='submit']")
     public WebElement submitBtn;
-    @FindBy(css = "button#details-button")
-    public WebElement advancedBtn;
-    @FindBy(css = "a#proceed-link")
-    public WebElement proceedToLink;
 
     public void login(){
         String username= ConfigurationReader.get("username");

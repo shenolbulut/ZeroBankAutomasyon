@@ -17,4 +17,24 @@ public class FindTransactionPage extends BasePage{
     public List<WebElement> tableDates;
     @FindBy(css = "#aa_description")
     public WebElement description;
+    @FindBy(xpath = "(//tbody)[2]/tr/td[2]")
+    public List<WebElement> descRows;
+
+    @FindBy(xpath = "(//tbody)[2]/tr/td[3]")
+    public List<WebElement> Deposit;
+    @FindBy(xpath = "(//tbody)[2]/tr/td[4]")
+    public List<WebElement> Withdrawal;
+
+    public List<WebElement> getDepOrWith(String key) {
+        if (key.equalsIgnoreCase("Deposit")) {
+            return this.Deposit;
+        } else if (key.equalsIgnoreCase("Withdrawal")) {
+            return this.Withdrawal;
+        }
+        return null;
+    }
+
+    @FindBy(css = "#aa_type")
+    public WebElement typeBttn;
+
 }
