@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 public class OnlineBanking extends BasePage{
 
     public void tabs(String tab){
-        String path="//span[@class='headers'][contains(.,'"+tab+"')]";
+        String path="//li[contains(.,'"+tab+"')]";
         Driver.get().findElement(By.xpath(path)).click();
     }
 
