@@ -2,8 +2,12 @@ package com.zerobank.step_definitions;
 
 import com.zerobank.pages.PayBillsPage;
 import com.zerobank.utilities.BrowserUtils;
+import com.zerobank.utilities.Driver;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.Map;
 
@@ -18,8 +22,8 @@ public class PayBillsDef {
 
            for (String key : info.keySet()) {
                new PayBillsPage().inputs(key, info.get(key));
-               Thread.sleep(300);
            }
+           BrowserUtils.waitFor(1);
 
         new PayBillsPage().addBttn.click();
     }

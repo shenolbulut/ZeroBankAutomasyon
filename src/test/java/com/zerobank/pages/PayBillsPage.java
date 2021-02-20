@@ -26,11 +26,11 @@ public class PayBillsPage extends BasePage{
         BrowserUtils.waitFor(1);
     }
     public void inputs(String key, String value){
-        String path="//*[@name='"+key+"']";
+        String path="//*[@id='np_new_payee_"+key+"']";
         Driver.get().findElement(By.xpath(path)).sendKeys(value);
     }
 
-    @FindBy(css = ".btn.btn-primary")
+    @FindBy(id = "add_new_payee")
     public WebElement addBttn;
 
 

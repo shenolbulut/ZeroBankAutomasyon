@@ -1,4 +1,3 @@
-
 Feature: Add new payee under pay bills
 
   Background:
@@ -6,7 +5,7 @@ Feature: Add new payee under pay bills
     When the user is on "Online Banking" page on Dashboard
     When the user is on "Pay Bills" page on Online Banking page
 
-  @wip
+
 
   Scenario: Add a new payee
     Then the user is on the "Add New Payee" tab
@@ -15,4 +14,6 @@ Feature: Add new payee under pay bills
     |address|100 Same st, Anytown, USA, 10001|
     |account|Checking|
     |details|XYZ account|
+
+
     Then message The new payee The Law Office of Hyde, Price & Scharks was succesfully created should be displayed
